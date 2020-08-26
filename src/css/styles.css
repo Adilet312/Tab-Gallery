@@ -1,38 +1,39 @@
-body{
-  margin: 0 auto;
- background: black;
-}
+body{background: black;}
+h1{color: white; text-align: center;}
 
-@media only screen and (min-width:600px){
+@media screen and (min-width:360px){
   .pictures{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: minmax(250px,auto) minmax(250px,auto);
+      grid-template-areas:
+      "first_area second_area third_area fourth_area"
+      "fifth_area fifth_area fifth_area fifth_area";
+      grid-gap:5px;
+      opacity: 1;
+  }
+}
+.pictures div img { transition-property: rgba(0,0,0,0.8); transition-duration: 1s;}
+.pictures div img:hover{opacity:0.7;}
+.picture1{ grid-area: first_area;}
+.picture2{ grid-area: second_area;}
+.picture3{ grid-area: third_area;}
+.picture4{ grid-area: fourth_area;}
+.bgPicture { grid-area: fifth_area; border:10px solid #fff;}
+
+
+
+
+/*.pictures{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 200px 300px;
-    grid-gap: 10px;
+    grid-template-rows: minmax(250px,auto) minmax(250px,auto);
+    grid-gap:5px;
+}
 
-  }
-  .pictures div img{ width:250px; height:250px; opacity:0.8;}
-  /* .bgPicture img{ min-width: 100%;} */
-}
-@media only screen and (min-width:1000px){
-  .pictures{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 250px 310px;
-    grid-gap: 10px;
-  }
-  .pictures div img{ width:300px; height:250px;}
-  /* .bgPicture img{ min-width: 98%;} */
-}
-.picture1 { grid-column: 1/2; grid-row: 1/2;}
-.picture2 { grid-column: 2/3; grid-row: 1/2;}
-.picture3 { grid-column: 3/4; grid-row: 1/2;}
-.picture4 { grid-column: 4/5; grid-row: 1/2;}
-.bgPicture { grid-column: 1/5; grid-row: 2/3;}
-.bgPicture { display: none;}
-.bgPicture img{ min-width: 100%; width: auto; height:300px;}
-.pictures div img:hover{opacity:1; }
-main{ border:5px solid #fff}
-.pictures div{
-  border:5px solid #fff
-}
+
+.picture1{ grid-column:1/2;grid-row:1/2;}
+.picture2{ grid-column:2/3;grid-row:1/2;}
+.picture3{ grid-column:3/4;grid-row:1/2;}
+.picture4{ grid-column:4/5;grid-row:1/2;}
+.bgPicture{ grid-column: 1/5; grid-row: 2/3; border:10px solid black;}*/
