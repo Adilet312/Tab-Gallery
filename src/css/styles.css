@@ -1,4 +1,4 @@
-body{background: black;}
+body{background:black; opacity:1;}
 h1{color: white; text-align: center;}
 
 @media screen and (min-width:360px){
@@ -13,7 +13,7 @@ h1{color: white; text-align: center;}
       opacity: 1;
   }
 }
-.pictures div img { transition-property: rgba(0,0,0,0.8); transition-duration: 1s;}
+.pictures div img { transition-property: rgba(0,0,0,0.8); transition-duration: 1s; border:1px solid #fff;}
 .pictures div img:hover{opacity:0.7;}
 .picture1{ grid-area: first_area;}
 .picture2{ grid-area: second_area;}
