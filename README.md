@@ -1,12 +1,12 @@
-# _Tic Tac Toe Game_
+# _Tab Gallery_
 
 #### _Version 1_
-#### _Date 08/21/2020_
+#### _Date 08/24/2020_
 #### By _**Adilet Momunaliev**_
 
 ## Description
 
-_Tic Tac Toe Game with two players._
+_Tab Gallery shows pictures as album when user click pictures._
 
 ## Getting Started
 
@@ -15,13 +15,12 @@ These instructions will get you a copy of the project up and running on your loc
 ### Instruction
 
 * Node js in your local machine
-* git clone https://github.com/Adilet312/Tic-Tac-Toe-Game.git
+* git clone https://github.com/Adilet312/Tab-Gallery.git
 * npm install
 * npm run start
 ### Specifications
 
-* A user can play.
-* A user can close layout page after winning.
+* A user can see bigger picture from list of small pictures.
 ## Technologies Used
 
 _HTML, CSS, JavaScript, DOM Elements and Methods, IDE Atom_
